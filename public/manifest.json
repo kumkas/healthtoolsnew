@@ -1,0 +1,55 @@
+{
+  "name": "Health Tools Hub - Free Health Calculators",
+  "short_name": "Health Tools",
+  "description": "Free online health calculators and tools. Calculate BMI, blood pressure, sleep cycles, and more with our medically accurate health assessment tools.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["health", "medical", "utilities"],
+  "lang": "en-US",
+  "shortcuts": [
+    {
+      "name": "BMI Calculator",
+      "short_name": "BMI",
+      "description": "Calculate your Body Mass Index",
+      "url": "/tools/general-health/bmi-calculator",
+      "icons": [{"src": "/icon-192.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Blood Pressure",
+      "short_name": "BP",
+      "description": "Check your blood pressure reading",
+      "url": "/tools/heart-health/blood-pressure-calculator",
+      "icons": [{"src": "/icon-192.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Sleep Calculator",
+      "short_name": "Sleep",
+      "description": "Find your optimal sleep schedule",
+      "url": "/tools/sleep-health/sleep-calculator",
+      "icons": [{"src": "/icon-192.png", "sizes": "192x192"}]
+    }
+  ]
+}

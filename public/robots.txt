@@ -1,0 +1,37 @@
+# Robots.txt for Health Tools Hub (healthtoolshub.com)
+
+User-agent: *
+Allow: /
+
+# Star Tools - Highest Priority
+Allow: /tools/general-health/bmi-calculator
+Allow: /tools/heart-health/blood-pressure-calculator
+Allow: /tools/sleep-health/sleep-calculator
+Allow: /tools/pregnancy-womens-health/due-date-calculator
+
+# All Tools Categories
+Allow: /tools/
+Allow: /categories/
+
+# Important Pages
+Allow: /about
+Allow: /blog
+Allow: /contact
+
+# Legal Pages
+Allow: /privacy
+Allow: /terms
+
+# Disallow admin or development paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /node_modules/
+
+# Sitemaps
+Sitemap: https://healthtoolshub.com/sitemap.xml
+Sitemap: https://healthtoolshub.com/sitemap-tools.xml
+Sitemap: https://healthtoolshub.com/sitemap-blog.xml
+
+# Crawl-delay for resource conservation
+Crawl-delay: 1
