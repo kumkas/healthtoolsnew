@@ -154,6 +154,20 @@ export const HEALTH_TOOLS: HealthTool[] = [
     lastUpdated: new Date('2024-01-15')
   },
   {
+    id: 'ovulation-calculator',
+    name: 'Ovulation Calculator',
+    description: 'Track your ovulation cycle and predict your most fertile days for conception',
+    category: 'pregnancy',
+    slug: 'ovulation-calculator',
+    icon: 'Heart',
+    featured: true,
+    metaTitle: 'Ovulation Calculator - Fertility Calendar & Ovulation Tracker | Health Tools Hub',
+    metaDescription: 'Calculate your ovulation dates and fertile window with our free ovulation calculator. Track your menstrual cycle, predict fertility, and plan conception with accurate ovulation predictions.',
+    keywords: ['ovulation calculator', 'fertility calculator', 'ovulation tracker', 'fertile days calculator', 'menstrual cycle calculator', 'conception calculator', 'fertility calendar', 'ovulation calendar'],
+    estimatedReadTime: 5,
+    lastUpdated: new Date('2024-01-15')
+  },
+  {
     id: 'calorie-calculator',
     name: 'Calorie Calculator',
     description: 'Calculate your daily calorie needs based on your goals and activity level',
