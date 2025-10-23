@@ -6,13 +6,11 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { Label } from '@/components/ui/Label'
-import { MEDICAL_DISCLAIMER } from '@/lib/constants'
 import { calculateOvulation } from '@/lib/calculations/ovulation'
 import { OvulationCalculatorInput, OvulationCalculatorResult } from '@/lib/schemas/ovulation'
 import { 
   Calendar, 
   Heart, 
-  Info, 
   AlertCircle
 } from 'lucide-react'
 
@@ -787,11 +785,20 @@ export const OvulationCalculator: React.FC = () => {
                         <InteractiveCalendar result={result} />
                       </div>
                     </div>
+                     {/* Due Date Cross-Reference */}
+                    <div className="text-center mt-6 pt-4 ">
+                      <p className="text-sm text-gray-600">
+                        Already pregnant? 
+                        <a 
+                          href="/tools/pregnancy-womens-health/due-date-calculator"
+                          className="text-blue-600 hover:text-blue-800 underline ml-1 font-medium"
+                        >
+                          Calculate your due date
+                        </a>
+                      </p>
+                    </div>
                   </CardContent>
                 </Card>
-
-                {/* Recommendations Card */}
-              
               </motion.div>
             ) : (
               <motion.div
@@ -826,27 +833,6 @@ export const OvulationCalculator: React.FC = () => {
         )}
       </div>
 
-      {/* Medical Disclaimer - Full Width at Bottom */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className="w-full bg-amber-50 border-t border-amber-200 mt-16"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex items-start space-x-4 max-w-4xl mx-auto">
-            <div className="flex-shrink-0">
-              <div className="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center">
-                <Info className="w-4 h-4 text-white" />
-              </div>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold text-amber-900 mb-3">Medical Disclaimer</h4>
-              <p className="text-amber-800 leading-relaxed">{MEDICAL_DISCLAIMER}</p>
-            </div>
-          </div>
-        </div>
-      </motion.div>
     </div>
   )
 }
